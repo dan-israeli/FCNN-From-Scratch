@@ -1,5 +1,5 @@
 # imported functions and classes
-from hw1_209190172_train_q1 import load_MNIST, find_accuracy, NeuralNetwork
+from train_model import load_MNIST, find_accuracy, NeuralNetwork
 import torch
 
 # constants
@@ -12,7 +12,7 @@ def evaluate_hw1_q1():
 
     # load trained model
     neural_network = NeuralNetwork()
-    trained_model = torch.load("trained_model_q1.pkl")
+    trained_model = torch.load("trained_model.pkl")
     neural_network.load(trained_model)
 
     # find accuracy on the test dataset
