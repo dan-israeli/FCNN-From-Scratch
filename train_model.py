@@ -194,7 +194,7 @@ def q1():
         'b2': neural_network.b2
     }
 
-    torch.save(trained_model, 'trained_model_q1.pkl')
+    torch.save(trained_model, 'trained_model.pkl')
 
 
 def main():
